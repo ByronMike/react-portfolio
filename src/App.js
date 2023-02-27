@@ -1,11 +1,10 @@
-function App() {
-  const [selectedPage, setSelectedPage] = useState
-  return (
-    <div className="App">
-      
+import { useState } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
 
-    </div>
-  );
+function App() {
+  const [selectedPage, setSelectedPage] = useState("home");
+  const isAboveMediumScreens = useMediaQuery;
+  return <div className="App"></div>;
 }
 
 export default App;
