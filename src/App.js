@@ -3,8 +3,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
-  const isAboveMediumScreens = useMediaQuery;
-  return <div className="App"></div>;
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  return <div className="app bg"></div>;
 }
 
 export default App;
