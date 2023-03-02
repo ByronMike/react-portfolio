@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react";
 
 const useMediaQuery = (query) => {
-  const [matches, setMaches] = useState(false);
+  const [matches, setMatches] = useState(false);
 
   // The useEffect hook is used to update the matches state variable whenever the viewport size changes.
   useEffect(() => {
     // The window.matchMedia() method is used to create a new media query object based on the input query
-    // The matches property of the media query object is then compared to the current value of the matches state variable. If they are different, the setMatches() function is called to update the state variable with the new value.
+    // The matches property of the media query object (media.matches is a boolean which depends on the dims given by the query) is then compared to the current value of the matches state variable. If they are different, the setMatches() function is called to update the state variable with the new value.
     const media = window.matchMedia(query);
     if (media.matches !== matches) {
       setMatches(media.matches);
