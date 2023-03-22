@@ -1,4 +1,4 @@
-// DotGroup represents the little lavbar on the right-hand of the screen wwhich appears when we scroll down
+// DotGroup represents the little navbar on the right-hand of the screen wwhich appears when we scroll down
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
