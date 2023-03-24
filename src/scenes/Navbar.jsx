@@ -27,97 +27,101 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={` ${navbarBackground}z-40 w-full sticky block top-0 py-6`}>
-      {/* The second example uses quotes to define the className attribute value
+    <div className="h-44">
+      <nav
+        className={` ${navbarBackground}z-1 w-full sticky block top-0 pt-6`}
+      >
+        {/* The second example uses quotes to define the className attribute value
       as a static string that is not interpolated from a JavaScript expression.
       The mx-auto and w-5/6 classes are fixed and will always be applied to the
       div element. In short, curly braces are used to interpolate a JavaScript
       expression within the className attribute value, while quotes are used to
       define a static string value. NOTE : curly braces would have worked as
       well !  */}
-      <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">MA</h4>
+        <div className="flex items-start justify-between mx-auto w-5/6">
+          <h4 className="font-playfair text-3xl font-bold">MA</h4>
 
-        {/* { DESKTOP NAV} */}
-        {isAboveSmallScrenns ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectePage={setSelectedPage}
-            />
-            <Link
-              page="Compétences"
-              selectedPage={selectedPage}
-              setSelectePage={setSelectedPage}
-            />
-            <Link
-              page="Projets"
-              selectedPage={selectedPage}
-              setSelectePage={setSelectedPage}
-            />
-            <Link
-              page="Témoignages"
-              selectedPage={selectedPage}
-              setSelectePage={setSelectedPage}
-            />
-            <Link
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectePage={setSelectedPage}
-            />
-          </div>
-        ) : (
-          <button
-            className="rounded-full bg-red p-2"
-            onClick={() => setIsMenuToggled(!isMenuToggled)}
-          >
-            <img alt="menu-icon" src="../assets/menu-icon.svg" />
-          </button>
-        )}
-
-        {/* MOBILE MENU POPUP */}
-        {!isAboveSmallScrenns && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
-            {/* CLOSE ICON */}
-            <div className="flex justify-end p-12">
-              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src="../assets/close-icon.svg" />
-              </button>
-            </div>
-
-            {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+          {/* { DESKTOP NAV} */}
+          {isAboveSmallScrenns ? (
+            <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                setSelectePage={setSelectedPage}
               />
               <Link
-                page="Skills"
+                page="Compétences"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                setSelectePage={setSelectedPage}
               />
               <Link
-                page="Projects"
+                page="Projets"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                setSelectePage={setSelectedPage}
               />
               <Link
-                page="Testimonials"
+                page="Témoignages"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                setSelectePage={setSelectedPage}
               />
               <Link
                 page="Contact"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                setSelectePage={setSelectedPage}
               />
             </div>
-          </div>
-        )}
-      </div>
-    </nav>
+          ) : (
+            <button
+              className="rounded-full bg-red p-2"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              <img alt="menu-icon" src="../assets/menu-icon.svg" />
+            </button>
+          )}
+
+          {/* MOBILE MENU POPUP */}
+          {!isAboveSmallScrenns && isMenuToggled && (
+            <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+              {/* CLOSE ICON */}
+              <div className="flex justify-end p-12">
+                <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                  <img alt="close-icon" src="../assets/close-icon.svg" />
+                </button>
+              </div>
+
+              {/* MENU ITEMS */}
+              <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+                <Link
+                  page="Home"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Skills"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Projects"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Testimonials"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Contact"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+    </div>
   );
 };
 

@@ -8,11 +8,11 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center pb-6 gap-4 md:h-full"
     >
       {/* IMAGE SECTION */}
       {/* The image is put on top (although it is on the right on a large screen => md:order-2) in order to be firstly shown on a small screen (first the picture and after the description) */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 flex justify-center md:order-2">
         {isAboveMediumScreens ? (
           // Here we build a draw relative to the picture
           <div
@@ -35,7 +35,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* MAIN SECTION */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-2/5">
         {/* HEADINGS */}
         {/* Motion allows to use ready-to-use animation (ex: for div) */}
         <motion.div
