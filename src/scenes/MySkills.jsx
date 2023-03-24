@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="compétences" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -20,7 +20,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            MES <span className="text-red">COMPÉTENCES</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -71,10 +71,22 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+            {/* Junior Full Stack React.js/NodeJS Developer */}
+            Après une première expérience personnelle de plus de 5 ans à gérer{" "}
+            <a href="www.surf-community.fr" className="hover:text-red underline text-blue">un blog communautaire</a> sur
+            Wordpress (<b>HTML, CSS, JS et PHP</b>), j'ai décidé de me
+            reconvertir en 2022 avec La Capsule, une formation intensive (+400
+            heures) labelisée Grande Ecole du Numérique : "Développeur Fullstack JS
+            web & mobile" (titre RNCP 6 (bac+3/+4)).
           </p>
+          {/* <p>
+          Aussi, elle repose sur des modalités pédagogiques uniques : un format de formation intensif (400 heures), une expérience professionnelle (+6 mois), des travaux en mode projet (10 projets fullstack web et mobile), en présentiel et qui se focalise sur la stack MERN : React / Express / MongoDB / Node.
+          </p>
+          <p>
+          Enfin, je su
+          </p> */}
+
+          {/* je vise l’efficience dans l’écriture du code afin de produire un code propre et de qualité. Le Web design et l’expérience utilisateur restent également au coeur de mes préocupations. */}
         </motion.div>
 
         {/* INNOVATIVE */}
@@ -99,10 +111,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            Passionné par l'innovation et les nouvelles technologies, je mets
+            mes compétences au services de vos besoins.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -127,10 +137,12 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+            À côté de mes activités de développeur, j'écris des articles pour
+            mon blog Surf-Community.fr, je donne régulièrement des cours dans
+            les domaines que j'affectionne (économie, management, économétrie)
+            et j'approfondis mes connaissances dans le domaine du machine
+            learning dans la perspective d'intégrer des services AI dans le Web
+            Développement.
           </p>
         </motion.div>
       </div>

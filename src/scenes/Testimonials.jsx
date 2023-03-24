@@ -6,7 +6,7 @@ const Testimonials = () => {
 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
 
   return (
-    <section id="testimonials" className="pt-32 pb-16">
+    <section id="témoignages" className="pt-32 pb-16">
       {/* HEADING */}
       <motion.div
         className="md:w-1/3 text-center md:text-left"
@@ -20,7 +20,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         }}
       >
         <p className="font-playfair font-semibold text-4xl mb-5 text-red">
-          TESTIMONIALS
+          TÉMOIGNAGES
         </p>
         <LineGradient width="mx-auto w-2/4" />
         <p className="mt-10">

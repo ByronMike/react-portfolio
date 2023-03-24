@@ -84,7 +84,7 @@ const Contact = () => {
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
-              placeholder="NAME"
+              placeholder="NOM"
               // React hook form : this input is registered as "name"
               {...register("name", {
                 required: true,
@@ -139,7 +139,7 @@ const Contact = () => {
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
             >
-              SEND ME A MESSAGE
+              ENVOYER UN MESSAGE
             </button>
           </form>
         </motion.div>

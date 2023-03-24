@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={` ${navbarBackground}z-40 w-full fixed top-0 py-6`}>
+    <nav className={` ${navbarBackground}z-40 w-full sticky block top-0 py-6`}>
       {/* The second example uses quotes to define the className attribute value
       as a static string that is not interpolated from a JavaScript expression.
       The mx-auto and w-5/6 classes are fixed and will always be applied to the
@@ -36,7 +36,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       define a static string value. NOTE : curly braces would have worked as
       well !  */}
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">JE</h4>
+        <h4 className="font-playfair text-3xl font-bold">MA</h4>
 
         {/* { DESKTOP NAV} */}
         {isAboveSmallScrenns ? (
@@ -47,17 +47,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectePage={setSelectedPage}
             />
             <Link
-              page="Skills"
+              page="Compétences"
               selectedPage={selectedPage}
               setSelectePage={setSelectedPage}
             />
             <Link
-              page="Projects"
+              page="Projets"
               selectedPage={selectedPage}
               setSelectePage={setSelectedPage}
             />
             <Link
-              page="Testimonials"
+              page="Témoignages"
               selectedPage={selectedPage}
               setSelectePage={setSelectedPage}
             />

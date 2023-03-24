@@ -52,19 +52,38 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             {/* {""} for the space ! */}
-            Jane {""}
+            Michaël {""}
             {/* Note : xs:before:content-brush is used for screens above XS and use the following source :  content => brush (cf: see tailwind.config.js) */}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Esper
+              Auger
             </span>
           </p>
 
+          <p className="mt-10 mb-7 text-m text-center md:text-start font-bold">
+            Junior Full Stack React.js/NodeJS Developer
+          </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Après une première expérience personnelle de plus de 5 ans à gérer{" "}
+            <a
+              href="www.surf-community.fr"
+              className="hover:text-red underline text-blue"
+            >
+              un blog communautaire
+            </a>{" "}
+            sur Wordpress (<b>HTML, CSS, JS et PHP</b>), j'ai décidé de me
+            reconvertir en 2022 avec La Capsule, une formation intensive (+400
+            heures) labelisée Grande Ecole du Numérique : "Développeur Fullstack
+            JS web & mobile" (titre RNCP 6 (bac+3/+4)) sur la stack MERN : React
+            / Express / MongoDB / Node.
+          </p>
+          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            Actuellement en mission à The Coding Machine, une agence de
+            marketing digital spécialisée pour les éditeurs de logiciels et ESN
+            en B2B, je travaille principalement sur la partie front (React /
+            Redux / Apollo GraphQL) pour un grand compte.
           </p>
         </motion.div>
 

@@ -36,7 +36,7 @@ const Project = ({ title }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projets" className="pt-48 pb-48">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -51,7 +51,7 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+            <span className="text-red">PRO</span>JETS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
