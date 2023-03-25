@@ -43,7 +43,7 @@ function App() {
       </div>
       {/* A separator of sections */}
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full md:flex md:flex-col md:justify-center md:align-center">
         <MySkills />
       </div>
       <LineGradient />
@@ -51,10 +51,11 @@ function App() {
         <Projects />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full md:flex md:flex-col md:justify-center md:align-center">
         <Testimonials />
       </div>
-      <div className="w-5/6 mx-auto">
+      <LineGradient />
+      <div className="w-5/6 mx-auto ">
         <Contact />
       </div>
       <div className="w-5/6 mx-auto">
