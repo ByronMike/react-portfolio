@@ -36,7 +36,7 @@ function App() {
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
-            setSelectePage={setSelectedPage}
+            setSelectedPage={setSelectedPage}
           />
         )}
         <Landing setSelectedPage={setSelectedPage} />
