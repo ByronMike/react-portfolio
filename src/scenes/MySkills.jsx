@@ -23,10 +23,151 @@ const MySkills = () => {
             MES <span className="text-red">COMPÉTENCES</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
+          <div className="flex justify-start items-center mt-8">
+            <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+              Front-end :
+            </p>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="react-icon"
+                src="../assets/react-icon.png"
+              />
+              <p>React</p>
+            </div>
+            <div className="flex flex-col justify-center items-center my-3 gap-1">
+              <img
+                className="contrast-200 hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="react-native-icon"
+                src="../assets/react-icon.png"
+              />
+              <div className="flex flex-row justify-center w-28">
+                <p>React Native</p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-8 w-9"
+                alt="nextjs-icon"
+                src="../assets/nextjs-logo.png"
+              />
+              <p>NextJS</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="redux-icon"
+                src="../assets/redux-logo.png"
+              />
+              <p>Redux</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="graphql-icon"
+                src="../assets/graphql-logo.png"
+              />
+              <p>GraphQL</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="tailwind-icon"
+                src="../assets/tailwind-logo.png"
+              />
+              <p>Tailwind</p>
+            </div>
+          </div>
+          <div className="flex justify-start items-center mt-8">
+            <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+              Back-end :
+            </p>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="nodejs-icon"
+                src="../assets/nodejs-logo.png"
+              />
+              <p>NodeJS</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="contrast-300 hover:opacity-50 transition duration-500 h-7 w-21"
+                alt="expressjs-icon"
+                src="../assets/expressjs-logo.png"
+              />
+              <p>ExpressJS</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="postgresql-icon"
+                src="../assets/postgresql-logo.png"
+              />
+              <p>PostgreSQL</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-12"
+                alt="mysql-icon"
+                src="../assets/mysql-logo.png"
+              />
+              <p>MySQL</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-12"
+                alt="php-icon"
+                src="../assets/php-logo.png"
+              />
+              <p>PHP</p>
+            </div>
+          </div>
+          <div className="flex justify-start items-center mt-8">
+            <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+              Outils :
+            </p>
+            <div className="flex flex-col justify-center items-center ml-12 mr-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="git-icon"
+                src="../assets/git-logo.png"
+              />
+              <p>GIT</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="contrast-300 hover:opacity-50 transition duration-500 h-7 w-21"
+                alt="github-icon"
+                src="../assets/github-logo.png"
+              />
+              <p>GitHUB</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-8"
+                alt="gitlab-icon"
+                src="../assets/gitlab-logo.png"
+              />
+              <p>GitLAB</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-12"
+                alt="docker-icon"
+                src="../assets/docker-logo.png"
+              />
+              <p>Docker</p>
+            </div>
+            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+              <img
+                className="hover:opacity-50 transition duration-500 h-7 w-12"
+                alt="bash-icon"
+                src="../assets/bash-logo.png"
+              />
+              <p>Bash</p>
+            </div>
+          </div>
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -73,11 +214,16 @@ const MySkills = () => {
           <p className="mt-5">
             {/* Junior Full Stack React.js/NodeJS Developer */}
             Après une première expérience personnelle de plus de 5 ans à gérer{" "}
-            <a href="www.surf-community.fr" className="hover:text-red underline text-blue">un blog communautaire</a> sur
-            Wordpress (<b>HTML, CSS, JS et PHP</b>), j'ai décidé de me
+            <a
+              href="www.surf-community.fr"
+              className="hover:text-red underline text-blue"
+            >
+              un blog communautaire
+            </a>{" "}
+            sur Wordpress (<b>HTML, CSS, JS et PHP</b>), j'ai décidé de me
             reconvertir en 2022 avec La Capsule, une formation intensive (+400
-            heures) labelisée Grande Ecole du Numérique : "Développeur Fullstack JS
-            web & mobile" (titre RNCP 6 (bac+3/+4)).
+            heures) labelisée Grande Ecole du Numérique : "Développeur Fullstack
+            JS web & mobile" (titre RNCP 6 (bac+3/+4)).
           </p>
           {/* <p>
           Aussi, elle repose sur des modalités pédagogiques uniques : un format de formation intensif (400 heures), une expérience professionnelle (+6 mois), des travaux en mode projet (10 projets fullstack web et mobile), en présentiel et qui se focalise sur la stack MERN : React / Express / MongoDB / Node.

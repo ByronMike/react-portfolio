@@ -42,7 +42,7 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       {/* A separator of sections */}
-      <LineGradient />
+      <LineGradient className="my-32" />
       <div className="w-5/6 mx-auto md:h-full md:flex md:flex-col md:justify-center md:align-center">
         <MySkills />
       </div>
