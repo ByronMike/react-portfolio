@@ -15,19 +15,17 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ ref, title, description, techstack }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+  const projectTitle = ref.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
+        <p className="mt-7">{description}</p>
+        <p className="mt-7">Tech Stack: {techstack}</p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
@@ -58,7 +56,8 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Un aperçu des projets que j'ai réalisés dans le cadre professionnel ou récréatif.
+          Un aperçu des projets que j'ai réalisés dans le cadre professionnel ou
+          récréatif.
         </p>
       </motion.div>
 
@@ -78,17 +77,52 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <Project
+            ref="Project 1"
+            title="surf-community.fr"
+            description="un site communautaire de Surf créé en 2017"
+            techstack="Wordpress + Elementor - LAMP (Linux, Apache, MySql, PHP)"
+          />
+          <Project
+            ref="Project 2"
+            title="Auger News"
+            description="un site d'informations sourcé à partir des données de The Verge"
+            techstack="MERN (MongoDB, Express, React, Node)"
+          />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project
+            ref="Project 3"
+            title="MyQuiver"
+            description="un MVP d'une application mobile no-code pour aider les surfeurs à choisir leurs planches"
+            techstack="Glide (no-code)"
+          />
+          <Project
+            ref="Project 4"
+            title="MyMoviz"
+            description="un site web présentant le classement des films avec le plus de vote sur themoviedb.org"
+            techstack="MERN (MongoDB, Express, React, Node)"
+          />
+          <Project
+            ref="Project 5"
+            title="Plant-Sitting"
+            description="une application mobile de mise en réseau pour l'entretien et le gardiennage des plantes"
+            techstack="MERN (MongoDB, Express, React Native, Node)"
+          />
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+          <Project
+            ref="Project 6"
+            title="MyTwitter"
+            description="un réseau social twitter-like pour tous"
+            techstack="MERN (MongoDB, Express, React, Node)"
+          />
+          <Project
+            ref="Project 7"
+            title="Locapic"
+            description="une application mobile de géolocalisation des villes"
+            techstack="MERN (MongoDB, Express, React, Node)"
+          />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
