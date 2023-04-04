@@ -25,7 +25,7 @@ const Project = ({ projectRef, title, description, techstack }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{description}</p>
-        <p className="mt-7">Tech Stack: {techstack}</p>
+        <p className="mt-7"><u>Tech Stack:</u> {techstack}</p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
@@ -79,48 +79,69 @@ const Projects = () => {
           </div>
           <Project
             projectRef="Project 1"
-            title="surf-community.fr"
-            description="un site communautaire de Surf créé en 2017"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" href="https://surf-community.fr">surf-community.fr</a>}
+            description="Un site communautaire de Surf créé en 2017"
             techstack="Wordpress + Elementor - LAMP (Linux, Apache, MySql, PHP)"
           />
           <Project
             projectRef="Project 2"
-            title="Auger News"
-            description="un site d'informations sourcé à partir des données de The Verge"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" href="https://mynews-frontend-jade.vercel.app/">Auger News</a>}
+            description="Un site d'informations sourcé à partir des données de The Verge"
             techstack="MERN (MongoDB, Express, React, Node)"
           />
 
           {/* ROW 2 */}
           <Project
             projectRef="Project 3"
-            title="MyQuiver"
-            description="un MVP d'une application mobile no-code pour aider les surfeurs à choisir leurs planches"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" title="Application disponible sur demande">MyQuiver</a>}
+            description="Un MVP d'une application mobile no-code pour aider les surfeurs à choisir leurs planches"
             techstack="Glide (no-code)"
           />
           <Project
             projectRef="Project 4"
-            title="MyMoviz"
-            description="un site web présentant le classement des films avec le plus de vote sur themoviedb.org"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" href="https://mymoviz-frontend-gilt.vercel.app/">MyMoviz</a>}
+            description="Un site web présentant le classement des films avec le plus de vote sur themoviedb.org"
             techstack="MERN (MongoDB, Express, React, Node)"
           />
           <Project
             projectRef="Project 5"
-            title="Plant-Sitting"
-            description="une application mobile de mise en réseau pour l'entretien et le gardiennage des plantes"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" title="Application disponible sur demande">Plant-Sitting</a>}
+            description="Une application mobile de mise en réseau pour l'entretien et le gardiennage des plantes"
             techstack="MERN (MongoDB, Express, React Native, Node)"
           />
 
           {/* ROW 3 */}
           <Project
             projectRef="Project 6"
-            title="MyTwitter"
-            description="un réseau social twitter-like pour tous"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" href="https://hackatweet-frontend.vercel.app/">MyTwitter</a>}
+            description="Un réseau social twitter-like pour tous"
             techstack="MERN (MongoDB, Express, React, Node)"
           />
           <Project
             projectRef="Project 7"
-            title="Locapic"
-            description="une application mobile de géolocalisation des villes"
+            title={<a class="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-blue
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300" title="Application disponible sur demande">Locapic</a>}
+            description="Une application mobile de géolocalisation des villes"
             techstack="MERN (MongoDB, Express, React, Node)"
           />
           <div
