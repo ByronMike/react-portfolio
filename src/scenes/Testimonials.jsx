@@ -24,8 +24,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         </p>
         <LineGradient width="mx-auto w-2/4" />
         <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+        Découvrez ce que mes clients ou mes collaborateurs ont à dire sur mon travail. Voici quelques-uns de leurs témoignages sur les projets que nous avons réalisés ensemble.
         </p>
       </motion.div>
 
@@ -45,7 +44,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+            Michaël a réalisé un travail très satisfaisant pour mon site WordPress (<a href="www.charleneonthebeach.com">www.charleneonthebeach.com</a>). Il a été à l'écoute et réactif pour réaliser mon site web en tenant compte de mes besoins et de mes demandes, tout au long du projet. Les customisations HTML et CSS apportées ont grandement amélioré l'apparence et les fonctionnalités de mon site. Je recommande vivement tes services à quiconque cherche un développeur web compétent et fiable. Merci beaucoup pour tout ton travail acharné et ton dévouement à la création d'un site exceptionnel !
           </p>
         </motion.div>
 
@@ -62,8 +61,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+            Mathis : témoignage..
           </p>
         </motion.div>
 
@@ -80,7 +78,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+            Coquelin: témoignage..
           </p>
         </motion.div>
       </div>
