@@ -2,7 +2,7 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
 const Testimonials = () => {
-  const testimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+  const testimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-10 mt-48
 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
 
   return (
@@ -43,8 +43,8 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Michaël a réalisé un travail très satisfaisant pour mon site WordPress (<a href="www.charleneonthebeach.com">www.charleneonthebeach.com</a>). Il a été à l'écoute et réactif pour réaliser mon site web en tenant compte de mes besoins et de mes demandes, tout au long du projet. Les customisations HTML et CSS apportées ont grandement amélioré l'apparence et les fonctionnalités de mon site. Je recommande vivement tes services à quiconque cherche un développeur web compétent et fiable. Merci beaucoup pour tout ton travail acharné et ton dévouement à la création d'un site exceptionnel !
+          <p className="text-justify text-sm">
+            Michaël a réalisé un travail très satisfaisant pour mon site WordPress (<a href="www.charleneonthebeach.com">charleneonthebeach.com</a>). Il a été à l'écoute et réactif pour réaliser mon site web en tenant compte de mes besoins et de mes demandes, tout au long du projet. Je recommande vivement tes services à quiconque cherche un développeur web compétent et fiable. 
           </p>
         </motion.div>
 
@@ -60,7 +60,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
+          <p className="text-justify text-sm">
             Mathis : témoignage..
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
+          <p className="text-justify text-sm">
             Coquelin: témoignage..
           </p>
         </motion.div>

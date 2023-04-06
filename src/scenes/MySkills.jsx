@@ -224,8 +224,7 @@ const MySkills = () => {
                 <a
                   href="www.surf-community.fr"
                   className="hover:text-red underline text-blue"
-                >
-                </a>{" "}
+                >Surf-Community.fr</a>{" "}
                 sur Wordpress (HTML, CSS, JS et PHP)
               </li>
             </ul>
@@ -254,8 +253,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Passionné par l'innovation (organisationnelle et de produit) et les nouvelles technologies (IA, blockchain, réalité virtuelle), je mets
-            mes compétences au services de vos besoins. 
+            Passionné par l'innovation (organisationnelle et de produit) et les
+            nouvelles technologies (IA, blockchain, réalité virtuelle), je mets
+            mes compétences au services de vos besoins.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -280,7 +280,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            À côté de mes activités de développeur, je puise ma créativité dans les activités qui me passionnent (sciences humaines, mathématiques appliquées, économie, monde sportif, musique).
+            À côté de mes activités de développeur, je puise ma créativité dans
+            les activités qui me passionnent (sciences humaines, mathématiques
+            appliquées, économie, monde sportif, musique).
           </p>
         </motion.div>
       </div>

@@ -22,15 +22,15 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
-  const [isMenuToggled, setIsMenuToggled] = useState("false");
-  const isAboveSmallScrenns = useMediaQuery("(min-width: 768px)");
+  const [isMenuToggled, setIsMenuToggled] = useState(false);
+  const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-red";
+
+  console.log("isMenuToggled", isMenuToggled);
 
   return (
     <div className="h-44">
-      <nav
-        className={` ${navbarBackground}z-1 w-full sticky block top-0 pt-6`}
-      >
+      <nav className={` ${navbarBackground}z-1 w-full sticky block top-0 pt-6`}>
         {/* The second example uses quotes to define the className attribute value
       as a static string that is not interpolated from a JavaScript expression.
       The mx-auto and w-5/6 classes are fixed and will always be applied to the
@@ -42,7 +42,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           <h4 className="font-playfair text-3xl font-bold">MA</h4>
 
           {/* { DESKTOP NAV} */}
-          {isAboveSmallScrenns ? (
+          {isAboveSmallScreens ? (
             <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
               <Link
                 page="Home"
@@ -75,13 +75,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               className="rounded-full bg-red p-2"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              <img alt="menu-icon" src="../assets/menu-icon.svg" />
+              <img
+                alt="menu-icon"
+                src="../assets/menu-icon.svg"
+              />
             </button>
           )}
 
           {/* MOBILE MENU POPUP */}
-          {!isAboveSmallScrenns && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          {!isAboveSmallScreens && isMenuToggled && (
+            <div className="fixed right-0 top-0 h-full bg-blue w-[300px]">
               {/* CLOSE ICON */}
               <div className="flex justify-end p-12">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
