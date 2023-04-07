@@ -3,6 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
 const MySkills = () => {
+  const isAboveXs = useMediaQuery("(min-width: 480px)");
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="compétences" className="pt-10 pb-24">
@@ -23,151 +24,248 @@ const MySkills = () => {
             MES <span className="text-red">COMPÉTENCES</span>
           </p>
           <LineGradient width="w-1/3" />
-          <div className="flex justify-start items-center mt-8">
-            <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
-              Front-end :
-            </p>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="react-icon"
-                src="../assets/react-icon.png"
-              />
-              <p>React</p>
-            </div>
-            <div className="flex flex-col justify-center items-center my-3 gap-1">
-              <img
-                className="contrast-200 hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="react-native-icon"
-                src="../assets/react-icon.png"
-              />
-              <div className="flex flex-row justify-center w-28">
-                <p>React Native</p>
+          {isAboveXs ? (
+            <div>
+              <div className="flex justify-start items-center mt-8">
+                <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+                  Front-end :
+                </p>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="react-icon"
+                    src="../assets/react-icon.png"
+                  />
+                  <p>React</p>
+                </div>
+                <div className="flex flex-col justify-center items-center my-3 gap-1">
+                  <img
+                    className="contrast-200 hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="react-native-icon"
+                    src="../assets/react-icon.png"
+                  />
+                  <div className="flex flex-row justify-center w-28">
+                    <p>React Native</p>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-8 w-9"
+                    alt="nextjs-icon"
+                    src="../assets/nextjs-logo.png"
+                  />
+                  <p>NextJS</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="redux-icon"
+                    src="../assets/redux-logo.png"
+                  />
+                  <p>Redux</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="graphql-icon"
+                    src="../assets/graphql-logo.png"
+                  />
+                  <p>GraphQL</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="tailwind-icon"
+                    src="../assets/tailwind-logo.png"
+                  />
+                  <p>Tailwind</p>
+                </div>
+              </div>
+              <div className="flex justify-start items-center mt-8">
+                <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+                  Back-end :
+                </p>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="nodejs-icon"
+                    src="../assets/nodejs-logo.png"
+                  />
+                  <p>NodeJS</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="contrast-300 hover:opacity-50 transition duration-500 h-7 w-21"
+                    alt="expressjs-icon"
+                    src="../assets/expressjs-logo.png"
+                  />
+                  <p>ExpressJS</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="postgresql-icon"
+                    src="../assets/postgresql-logo.png"
+                  />
+                  <p>PostgreSQL</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-12"
+                    alt="mysql-icon"
+                    src="../assets/mysql-logo.png"
+                  />
+                  <p>MySQL</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-12"
+                    alt="php-icon"
+                    src="../assets/php-logo.png"
+                  />
+                  <p>PHP</p>
+                </div>
+              </div>
+              <div className="flex justify-start items-center mt-8">
+                <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+                  Outils :
+                </p>
+                <div className="flex flex-col justify-center items-center ml-12 mr-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="git-icon"
+                    src="../assets/git-logo.png"
+                  />
+                  <p>GIT</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="contrast-300 hover:opacity-50 transition duration-500 h-7 w-21"
+                    alt="github-icon"
+                    src="../assets/github-logo.png"
+                  />
+                  <p>GitHUB</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-8"
+                    alt="gitlab-icon"
+                    src="../assets/gitlab-logo.png"
+                  />
+                  <p>GitLAB</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-12"
+                    alt="docker-icon"
+                    src="../assets/docker-logo.png"
+                  />
+                  <p>Docker</p>
+                </div>
+                <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
+                  <img
+                    className="hover:opacity-50 transition duration-500 h-7 w-12"
+                    alt="bash-icon"
+                    src="../assets/bash-logo.png"
+                  />
+                  <p>Bash</p>
+                </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-8 w-9"
-                alt="nextjs-icon"
-                src="../assets/nextjs-logo.png"
-              />
-              <p>NextJS</p>
+          ) : (
+            <div>
+              <div className="flex justify-between items-center mt-8">
+                <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+                  Front-end :
+                </p>
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="react-icon"
+                  src="../assets/react-icon.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-8 w-9"
+                  alt="nextjs-icon"
+                  src="../assets/nextjs-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="redux-icon"
+                  src="../assets/redux-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="graphql-icon"
+                  src="../assets/graphql-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="tailwind-icon"
+                  src="../assets/tailwind-logo.png"
+                />
+              </div>
+              <div className="flex justify-between items-center mt-8">
+                <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+                  Back-end :
+                </p>
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="nodejs-icon"
+                  src="../assets/nodejs-logo.png"
+                />
+                <img
+                  className="contrast-300 hover:opacity-50 transition duration-500 mx-1 h-7 w-21"
+                  alt="expressjs-icon"
+                  src="../assets/expressjs-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="postgresql-icon"
+                  src="../assets/postgresql-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-12"
+                  alt="mysql-icon"
+                  src="../assets/mysql-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-12"
+                  alt="php-icon"
+                  src="../assets/php-logo.png"
+                />
+              </div>
+              <div className="flex justify-between items-center mx-1 mt-8">
+                <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
+                  Outils :
+                </p>
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="git-icon"
+                  src="../assets/git-logo.png"
+                />
+                <img
+                  className="contrast-300 hover:opacity-50 transition duration-500 mx-1 h-7 w-21"
+                  alt="github-icon"
+                  src="../assets/github-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-8"
+                  alt="gitlab-icon"
+                  src="../assets/gitlab-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-12"
+                  alt="docker-icon"
+                  src="../assets/docker-logo.png"
+                />
+                <img
+                  className="hover:opacity-50 transition duration-500 mx-1 h-7 w-12"
+                  alt="bash-icon"
+                  src="../assets/bash-logo.png"
+                />
+              </div>
             </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="redux-icon"
-                src="../assets/redux-logo.png"
-              />
-              <p>Redux</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="graphql-icon"
-                src="../assets/graphql-logo.png"
-              />
-              <p>GraphQL</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="tailwind-icon"
-                src="../assets/tailwind-logo.png"
-              />
-              <p>Tailwind</p>
-            </div>
-          </div>
-          <div className="flex justify-start items-center mt-8">
-            <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
-              Back-end :
-            </p>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="nodejs-icon"
-                src="../assets/nodejs-logo.png"
-              />
-              <p>NodeJS</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="contrast-300 hover:opacity-50 transition duration-500 h-7 w-21"
-                alt="expressjs-icon"
-                src="../assets/expressjs-logo.png"
-              />
-              <p>ExpressJS</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="postgresql-icon"
-                src="../assets/postgresql-logo.png"
-              />
-              <p>PostgreSQL</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-12"
-                alt="mysql-icon"
-                src="../assets/mysql-logo.png"
-              />
-              <p>MySQL</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-12"
-                alt="php-icon"
-                src="../assets/php-logo.png"
-              />
-              <p>PHP</p>
-            </div>
-          </div>
-          <div className="flex justify-start items-center mt-8">
-            <p className="font-playfair font-semibold text-lg mr-6 whitespace-nowrap">
-              Outils :
-            </p>
-            <div className="flex flex-col justify-center items-center ml-12 mr-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="git-icon"
-                src="../assets/git-logo.png"
-              />
-              <p>GIT</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="contrast-300 hover:opacity-50 transition duration-500 h-7 w-21"
-                alt="github-icon"
-                src="../assets/github-logo.png"
-              />
-              <p>GitHUB</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-8"
-                alt="gitlab-icon"
-                src="../assets/gitlab-logo.png"
-              />
-              <p>GitLAB</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-12"
-                alt="docker-icon"
-                src="../assets/docker-logo.png"
-              />
-              <p>Docker</p>
-            </div>
-            <div className="flex flex-col justify-center items-center mx-3 my-3 gap-1">
-              <img
-                className="hover:opacity-50 transition duration-500 h-7 w-12"
-                alt="bash-icon"
-                src="../assets/bash-logo.png"
-              />
-              <p>Bash</p>
-            </div>
-          </div>
+          )}
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -224,7 +322,9 @@ const MySkills = () => {
                 <a
                   href="www.surf-community.fr"
                   className="hover:text-red underline text-blue"
-                >Surf-Community.fr</a>{" "}
+                >
+                  Surf-Community.fr
+                </a>{" "}
                 sur Wordpress (HTML, CSS, JS et PHP)
               </li>
             </ul>
