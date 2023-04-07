@@ -75,16 +75,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               className="rounded-full bg-red p-2"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              <img
-                alt="menu-icon"
-                src="../assets/menu-icon.svg"
-              />
+              <img alt="menu-icon" src="../assets/menu-icon.svg" />
             </button>
           )}
 
           {/* MOBILE MENU POPUP */}
           {!isAboveSmallScreens && isMenuToggled && (
-            <div className="fixed right-0 top-0 h-full bg-blue w-[300px]">
+            <div className="fixed right-0 top-0 h-full bg-blue w-[50%]">
               {/* CLOSE ICON */}
               <div className="flex justify-end p-12">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -97,27 +94,27 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 <Link
                   page="Home"
                   selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  setSelectePage={setSelectedPage}
                 />
                 <Link
-                  page="Skills"
+                  page="Compétences"
                   selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  setSelectePage={setSelectedPage}
                 />
                 <Link
-                  page="Projects"
+                  page="Projets"
                   selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  setSelectePage={setSelectedPage}
                 />
                 <Link
-                  page="Testimonials"
+                  page="Témoignages"
                   selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  setSelectePage={setSelectedPage}
                 />
                 <Link
                   page="Contact"
                   selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  setSelectePage={setSelectedPage}
                 />
               </div>
             </div>
