@@ -42,7 +42,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-6xl">“<span className="font-playfair text-xl text-black">Charlène.H</span></p>
           <p className="text-justify text-sm">
             Michaël a réalisé un travail très satisfaisant pour mon site WordPress (<a href="www.charleneonthebeach.com">charleneonthebeach.com</a>). Il a été à l'écoute et réactif pour réaliser mon site web en tenant compte de mes besoins et de mes demandes, tout au long du projet. Je recommande vivement tes services à quiconque cherche un développeur web compétent et fiable. 
           </p>
@@ -59,9 +59,9 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-6xl">“<span className="font-playfair text-xl text-black">Mathis.C</span></p>
           <p className="text-justify text-sm">
-            Mathis : témoignage..
+            ips
           </p>
         </motion.div>
 
@@ -76,9 +76,9 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+         <p className="font-playfair text-6xl">“<span className="font-playfair text-xl text-black">Stéphane.C</span></p>
           <p className="text-justify text-sm">
-            Coquelin: témoignage..
+          Le travail réalisé par Michael Auger m'a permis de juger de ses qualités de réflexion, de rédaction et d'investigation auprès d'acteurs institutionnels ou financiers. Son goût marqué pour la recherche de nouvelles solutions, ses fortes convictions pour faire avancer les réflexions, son esprit toujours curieux ont été des facteurs clé de réussite.
           </p>
         </motion.div>
       </div>

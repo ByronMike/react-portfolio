@@ -29,7 +29,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   console.log("isMenuToggled", isMenuToggled);
 
   return (
-    <div className="h-44">
+    <div className="h-44 z-50">
       <nav className={` ${navbarBackground}z-1 w-full sticky block top-0 pt-6`}>
         {/* The second example uses quotes to define the className attribute value
       as a static string that is not interpolated from a JavaScript expression.
@@ -81,7 +81,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
           {/* MOBILE MENU POPUP */}
           {!isAboveSmallScreens && isMenuToggled && (
-            <div className="fixed right-0 top-0 h-full bg-blue w-[50%]">
+            <div className="fixed right-0 z-50 top-0 h-full bg-blue w-[50%]">
               {/* CLOSE ICON */}
               <div className="flex justify-end p-12">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
