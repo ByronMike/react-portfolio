@@ -61,7 +61,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         >
           <p className="font-playfair text-6xl">“<span className="font-playfair text-xl text-black">Mathis.C</span></p>
           <p className="text-justify text-sm">
-            ips
+          Je suis ravi de recommander Michaël pour son travail de haute qualité sur notre projet commun React, Express, MongoDB et Redux. Il a travaillé au développement de notre application (front-end et back-end) dans des délais serrés. Je suis reconnaissant pour son excellent travail et je recommande Michaël sans hésitation.
           </p>
         </motion.div>
 

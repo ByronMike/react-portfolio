@@ -32,7 +32,7 @@ const Project = ({ projectRef, title, href, name, description, techstack }) => {
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
-  );
+  ); 
 };
 
 const Projects = () => {
