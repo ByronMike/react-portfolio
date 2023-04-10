@@ -26,11 +26,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
-  console.log("isMenuToggled", isMenuToggled);
-
   return (
-    <div className="h-44 z-50">
-      <nav className={` ${navbarBackground}z-1 w-full sticky block top-0 pt-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
         {/* The second example uses quotes to define the className attribute value
       as a static string that is not interpolated from a JavaScript expression.
       The mx-auto and w-5/6 classes are fixed and will always be applied to the
@@ -121,7 +118,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           )}
         </div>
       </nav>
-    </div>
   );
 };
 
