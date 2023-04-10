@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   const testimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-10 mt-48
-before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
+before:absolute before:top-[0px] before:left-1/2 lg:before:top-[-120px] lg:before:-ml-[110px] lg:before:left-1/2`;
 
   return (
     <section id="témoignages" className="pt-32 pb-16">
@@ -32,7 +32,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
       <div className="md:flex md:justify-between gap-8">
         <motion.div
           // Note: person1 in defined in content (tailwind.config.js)
-          className={` bg-blue ${testimonialStyles}  before:content-person1small md:before:content-person1`}
+          className={` bg-blue ${testimonialStyles}  before:content-person1small lg:before:content-person1`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -49,7 +49,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         </motion.div>
 
         <motion.div
-          className={` bg-red ${testimonialStyles}  before:content-person2small md:before:content-person2`}
+          className={` bg-red ${testimonialStyles}  before:content-person2small lg:before:content-person2`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -66,7 +66,7 @@ before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
         </motion.div>
 
         <motion.div
-          className={` bg-yellow ${testimonialStyles} before:content-person3small md:before:content-person3`}
+          className={` bg-yellow ${testimonialStyles} before:content-person3small lg:before:content-person3`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
